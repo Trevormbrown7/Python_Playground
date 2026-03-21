@@ -1,6 +1,5 @@
 import random, os, time
 
-
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -85,3 +84,5 @@ while True:
     main()
     if not play_again():
         break
+
+# Just cleaned some things up
