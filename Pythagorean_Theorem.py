@@ -29,6 +29,13 @@ while running:
     pygame.draw.line(screen, ("white"), (x, y), (x-r, y), 2)
     pygame.draw.line(screen, ("white"), (x, y), (x, y-r), 2)
     #x2 + y2 = z2
+    dx = mouse_pos[0] - x
+    dy = mouse_pos[1] - y
+    d = (dx**2 + dy**2) ** 0.5
+    if d <= r:
+        print("HOVER")
+    else:
+        pass
     z = (x**2 + y**2)**0.5
     pygame.draw.line(screen, ("white"), (x, y), (z, z), 2)
 
