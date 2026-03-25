@@ -47,7 +47,7 @@ class Button:
         mouse_pos = pygame.mouse.get_pos()
         if self.rect.collidepoint(mouse_pos):
             if score >= 10:
-                click_power += 10
+                click_power *= 10
                 score -= 10
         return score, click_power
 
