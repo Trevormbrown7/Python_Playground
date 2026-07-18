@@ -9,7 +9,7 @@ def matrix_rain():
 
     drops = [random.randint(-rows, 0) for _ in range(columns)]
 
-    chars = "ABCDEFG"
+    chars = "ABCDEFG09887654312zxcvbnmasdlkjgqowirtjqpo/.,;']["
 
     GREEN = "\033[32m"
     BOLD_GREEN = "\033[1;32m"
